@@ -1,0 +1,432 @@
+html {
+    font-size: 15px;
+}
+
+:root {
+    --w__desk-s: 65rem; /* Desktop Standart Width */
+    --w__desk-m: 80vw;  /* Desktop Mini Width */
+    --w__tabl: 85vw;
+    --w__mobi: 90vw;
+    --c__accent: var(#ff5a5a);
+    --c__pass: var(#92f19a);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    font-family: "Oswald", "Open Sans", sans-serif;
+}
+
+body > *, header {
+    width: 100%;
+}
+
+body > * > div > div, header > div, footer > div {
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+/* --------------------------------------------- */
+
+/* Стандартные стили (для всех + десктоп) */
+body > * > div > div{
+    width: var(--w__desk-s);
+}
+
+header{
+	height: 100vh;
+	background: #f8d2b7;
+    display: flex;
+    align-items: center;
+}
+
+nav > ul{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+    font-weight: 900;
+}
+
+nav > ul > li{
+	list-style: none;
+	margin-right: 40px;
+}
+
+nav > ul > li > a{
+	color: #3f3f40;
+	text-decoration: none;
+    transition:all 200ms ease;
+}
+
+nav > ul > li > a:hover{
+    color: #ffea44;
+    transition:all 200ms ease;
+
+}
+
+nav > ul > div {
+    background-image: url(img/logo3.png);
+    display: block;
+    width: 330px; height: 445px;
+    transition:all 200ms ease;
+}
+
+nav > ul > div:hover {
+    background-image: url(img/logo1.png);
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+/* About */
+
+section{
+    height: 100vh;
+}
+
+.aboutMe{
+    height: 100%;
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+.aboutMe > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe > div > div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+}
+
+.aboutText{
+    display: block;
+    border: 2px black dotted;
+    width: 50%;
+    padding: 50px;
+    margin-right: 30px;
+    height: 100%;
+}
+
+/* Gallery */
+
+
+section > .galleryBg{
+    background-color:#BAA595;
+    height: 100%;
+}
+
+section > .galleryBg > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotorama{
+    margin-bottom: 50px;
+}
+
+/* prices */
+.prices{
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+.prices > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.quiz > *{
+    margin-bottom: 100px;
+    font-size: 2rem;
+}
+
+.changeFormat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#format{
+    border: 2px solid black;
+    width: 54%;
+    font-size: 1.8rem;
+}
+
+#timecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#time, #dj{
+    width: 50%;
+}
+
+#timevalue{
+    height: auto; width: auto;
+}
+
+#djcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#techncontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#display, #light{
+    margin-right: 20px;
+}
+
+#light{
+    margin-left: 20px;
+}
+
+.resultPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.resultPrice > *{
+    margin-right: 8px ;
+}
+
+#sum{
+    text-decoration: underline;
+}
+
+/* testemonials */
+section > .testemonials{
+    background: #D0A688;
+    height: 100vh;
+}
+.testemonials > div{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+}
+
+.block-one-example {
+    margin:30px 0;
+    position: relative;
+}
+
+.menu-top-demo {
+    margin-top: 30px;
+}
+
+.menu-top-demo ul {
+    text-align: center;
+}
+
+.menu-top-demo ul li{
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.menu-top-demo ul li a{
+    display: block;
+    padding:0 20px;
+    color:#fff;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin:10px;
+    color:#4BC096;
+    border:2px solid #4BC096;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.menu-top-demo ul li a:hover{
+    border:2px solid #D8D8D8;
+}
+
+.menu-top-demo ul li a.active,
+.menu-top-demo ul li a.active:hover {
+    background-color: #4BC096;
+    color:#fff;
+    border:2px solid #4BC096;
+}
+
+.icon-download a {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    top:0;
+    right:0;
+    display: block;
+    line-height: 60px;
+}
+
+.fileSizeDemo{
+    color:#fff;
+    opacity: 1;
+    position: absolute;
+    top:-60px;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    background-color: #39BE8E;
+    text-align: center;
+    padding: 10px 0;
+    display: block;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    border-radius: 4px;
+    font-size: 24px;
+    box-shadow: 0 0px 4px rgba(0,0,0,.4);
+    opacity: 0;
+}
+
+.fileSizeDemo:after {
+    content:"";
+    position: absolute;
+    bottom:-20px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1px;
+    border:10px solid transparent;
+    border-top-color: #39BE8E;
+}
+
+.icon-download a:hover .fileSizeDemo{
+    color:#fff;
+    opacity: 1;
+    position: absolute;
+    top:-70px;
+}
+
+.container {
+    max-width: 960px;
+    width: 90%;
+    margin:0 auto;
+}
+
+.inner-testimonial {
+    text-align: center;
+    background-color: transparent;
+}
+
+.inner-testimonial > img{
+    max-width: 128px;
+    margin:0 auto 15px;
+    opacity: 0;
+    -webkit-transition:all 1.3s linear;
+    transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img{
+    -webkit-transition:all 1.3s linear;
+    transition:all 1.3s linear;
+}
+
+.owl-item.active .inner-testimonial > img.full-opacity {
+    opacity:1;
+    -webkit-transition:all 0.3s linear;
+    transition:all 0.3s linear;
+}
+
+h3.city-name {
+    padding:10px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+p.text-testimonial {
+    padding:10px 0;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.block-items {
+    cursor: default;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+
+/* footer */
+
+.footerBg{
+ background: #FCDFCA;
+}
+
+
+/* Мобилка */
+@media (max-width: 575px) {
+    body > * > div > div {
+        width: var(--w__mobi);
+    }
+}
+
+
+
+
+/* Планшеты */
+@media (min-width: 576px) and (max-width: 767px) {
+    body > * > div > div {
+        width: var(--w__tabl);
+    }
+}
+
+
+
+
+/* Десктоп (меньше) */
+@media (min-width: 768px) and (max-width: 1280px) {
+    body > * > div > div {
+        width: var(--w__desk-m);
+    }
+}

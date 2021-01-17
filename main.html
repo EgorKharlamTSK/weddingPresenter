@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ведущий мероприятий</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+	<style>
+        @keyframes contentAppear {
+            0%  { opacity: 0; }
+            40% { opacity: 0; }
+            99% { opacity: 1; }
+        }
+
+        body {
+            animation: contentAppear .9s ease-in-out;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+	<header>
+        <div>
+			<nav>
+				<ul>
+					<li><a href=#>Обо мне</a></li>
+					<li><a href=#>Галерея</a></li>
+
+					<div class="logo"></div>
+
+					<li><a href=#>Отзывы</a></li>
+					<li><a href=#>Цены</a></li>
+				</ul>
+		    </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="aboutMe">
+	        <div>
+	        	<h1>Обо мне</h1>
+	        	<div>
+	        	<div class="aboutText">
+	        		<p>Опыт работы на мероприятиях различного уровня: свадьбы, официальные мероприятия, корпоративные праздники.
+							Умею находить общий язык с людьми различных взглядов, а так же удивить даже самого искушенного гостя на любом мероприятии.
+							Общение с людьми, это то что к чему стремлюсь на протяжении всего жизненного пути, а когда это общение приносит улыбки, смех и комфортную для всех окружающих атмосферу тогда понимаю, что живу на этом свете не зря!</br>
+							</br>
+							*ведущий шоу "Караоке-мания" на "Живом ТВ"</br>
+							*участник команды КВН "Дождь" (Лига КВН "Сибирь", г. Новосибирск, Лига КВН "Азия", г. Красноярск, участники 24-го фестиваля КВН в г.Сочи)</br>
+							*организация Geek-конвента "Con.Версия" (написание сценария и проведение сценической части мероприятия)
+					</p>
+	        	</div>
+
+	        	<div class="aboutPhoto">
+	        		<img src="img/mephoto.jpg">
+	        	</div>
+	        	</div>
+        	</div>
+        </div>
+    </section>
+
+    <section>
+	    <div class="galleryBg">
+	    	<div>
+	    		<h1>Галлерея изображений</h1>
+		        <div class="fotorama">
+				  <img src="img/gallery/gallery1.jpg">
+				  <img src="img/gallery/gallery2.jpg">
+				  <img src="img/gallery/gallery3.jpg">
+				  <img src="img/gallery/gallery4.jpg">
+				  <img src="img/gallery/gallery5.jpg">
+				  <img src="img/gallery/gallery6.jpg">
+				  <img src="img/gallery/gallery7.jpg">
+				  <img src="img/gallery/gallery8.jpg">
+				  <img src="img/gallery/gallery9.jpg">
+				  <img src="img/gallery/gallery10.jpg">
+				</div>
+			</div>	
+	    </div>
+	</section>
+
+	<section>
+		<div class="prices">
+			<div>
+				<h1>Сколько будет стоить мероприятие?</h1>
+				<div class="quiz">
+					<div class="changeFormat">
+						<h2>Выберите формат события</h2>
+						<select id="format" title="выберите" onchange="price()">
+							<option type="radio" value="3000">Свадьба</option>
+							<option type="radio" value="3500">Корпоратив</option>
+						</select>
+					</div>
+					<div id="timecontainer">
+						<h2>Время проведения мероприятия, часов</h2>
+						<input id="time" oninput="price()" type="range" min="1" max="5" step="1" value="1">
+						<div id="timevalue"></div>
+					</div>
+					<div id="djcontainer">
+						<h2>Время работы DJ(дополнительно), часов</h2>
+						<input id="dj" oninput ="price()" type="range" min="6" max="7" step="1" value="6">
+						<div id="djvalue"></div>
+					</div>
+					<div id="techncontainer">
+						<input id="display" onchange="price()" value="2500" type="checkbox">Проектор + Экран
+						<input id="light" onchange="price()" type="checkbox" value="3000">Световое оборудование
+					</div>
+					<div class="resultPrice">
+						<h2>Мероприятие Вам обойдется всего в </h2>
+						<div id="sum"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+        <div class="testemonials">
+			<div>
+				<h1>Отзывы о моей работе</h1>
+				<div id="testimonials">
+					<div class="container">
+						<div class="block-one-example">
+							<div class="owl-carousel block-items">
+								<div class="item">
+									<div class="inner-testimonial">
+										<img src="img/testemonials/client1.png" class="animated fadeIn full-opacity" alt="Клиент 1">
+										<h3 class="city-name">Иван, Москва</h3>
+										<p class="text-testimonial">Очень хочу поблагодарить, за такой прекрасный праздник, который нам устроил Егор, в самый лучший день нашей жизни!❤️ Нам все безумно понравилось.
+											Была уютная атмосфера, никто не чувствовал себя скованно. Гости остались довольны праздником! Спасибо большое!!❤️ Действительно профессионал в своем деле!</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner-testimonial">
+										<img src="img/testemonials/client2.png" alt="Клиент 2">
+										<h3 class="city-name">Светлана, Екатеринбург</h3>
+										<p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="inner-testimonial">
+										<img src="img/testemonials/client3.png" alt="Клиент 3">
+										<h3 class="city-name">Александр, Ярославль</h3>
+										<p class="text-testimonial">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! Грамматики живет власти текст дорогу.</p>
+									</div>
+								</div>
+							</div>
+						</div><!-- .block-one-example -->
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerBg">
+            <div>
+                this is footer
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script defer src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
