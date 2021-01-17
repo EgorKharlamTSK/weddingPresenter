@@ -3,8 +3,8 @@ html {
 }
 
 :root {
-    --w__desk-s: 65rem; /* Desktop Standart Width */
-    --w__desk-m: 80vw;  /* Desktop Mini Width */
+    --w__desk-s: 65rem; 
+    --w__desk-m: 80vw;  
     --w__tabl: 85vw;
     --w__mobi: 90vw;
     --c__accent: var(#ff5a5a);
@@ -38,9 +38,6 @@ h2{
     font-size: 2rem;
 }
 
-/* --------------------------------------------- */
-
-/* Стандартные стили (для всех + десктоп) */
 body > * > div > div{
     width: var(--w__desk-s);
 }
@@ -404,7 +401,6 @@ p.text-testimonial {
 }
 
 
-/* Мобилка */
 @media (max-width: 575px) {
     body > * > div > div {
         width: var(--w__mobi);
@@ -413,8 +409,6 @@ p.text-testimonial {
 
 
 
-
-/* Планшеты */
 @media (min-width: 576px) and (max-width: 767px) {
     body > * > div > div {
         width: var(--w__tabl);
@@ -423,8 +417,6 @@ p.text-testimonial {
 
 
 
-
-/* Десктоп (меньше) */
 @media (min-width: 768px) and (max-width: 1280px) {
     body > * > div > div {
         width: var(--w__desk-m);
