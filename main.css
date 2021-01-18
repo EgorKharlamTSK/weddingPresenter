@@ -153,7 +153,6 @@ section > .galleryBg > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
 }
 
 .quiz > *{
@@ -222,15 +221,19 @@ section > .galleryBg > div{
     text-decoration: underline;
 }
 
-/* testemonials */
-section > .testemonials{
+/* testimonials */
+section > .testim{
     background: #D0A688;
     height: 100vh;
 }
-.testemonials > div{
+.testim > div{
     display: flex;
     flex-direction: column;
     align-content:center;
+}
+
+#testimonials{
+    margin-top: -20px;
 }
 
 .block-one-example {
@@ -344,14 +347,18 @@ section > .testemonials{
 .inner-testimonial {
     text-align: center;
     background-color: transparent;
+
 }
 
 .inner-testimonial > img{
-    max-width: 128px;
+    max-width: 200px;
     margin:0 auto 15px;
     opacity: 0;
+    border-radius: 20px;
     -webkit-transition:all 1.3s linear;
     transition:all 1.3s linear;
+    border: 3px solid #E8CEBB;
+    box-shadow: 0 0 0 1px #ccc, inset 0 0 0 1px #ccc;
 }
 
 .owl-item.active .inner-testimonial > img{
@@ -367,14 +374,18 @@ section > .testemonials{
 
 h3.city-name {
     padding:10px 0;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 900;
 }
 
 p.text-testimonial {
     padding:10px 0;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 1.8rem;
+    line-height: 30px;
+    background-color: #E8CEBB;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .block-items {
@@ -382,14 +393,18 @@ p.text-testimonial {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span{
     width: 18px;
     height: 18px;
 }
+
+/* */
+
+
 
 
 

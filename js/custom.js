@@ -8,12 +8,10 @@ $(document).ready(function() {
 		onChanged: animateImgClear
 	});
 
-	//Добавляем класс с анимацией изображения
 	function animateImgFunc() {
 		$(".owl-carousel .active .inner-testimonial img").addClass("animated fadeIn full-opacity");
 	}
 
-	//Удаляем класс с анимацией изображения
 	function animateImgClear() {
 		$(".owl-carousel .active .inner-testimonial img").removeClass("animated fadeIn full-opacity");
 	}
