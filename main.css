@@ -90,9 +90,6 @@ nav > ul > div:hover {
 
 /* About */
 
-section{
-    height: 100vh;
-}
 
 .aboutMe{
     height: 100%;
@@ -224,7 +221,6 @@ section > .galleryBg > div{
 /* testimonials */
 section > .testim{
     background: #D0A688;
-    height: 100vh;
 }
 .testim > div{
     display: flex;
