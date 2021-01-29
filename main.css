@@ -126,12 +126,12 @@ nav > ul > div:hover {
 /* Gallery */
 
 
-section > .galleryBg{
+.galleryBg{
     background-color:#BAA595;
     height: 100%;
 }
 
-section > .galleryBg > div{
+.galleryBg > div{
     display: flex;
     flex-direction: column;
 }
@@ -224,7 +224,7 @@ section > .galleryBg > div{
 }
 
 /* testimonials */
-section > .testim{
+.testim{
     background: #D0A688;
 }
 .testim > div{
@@ -403,8 +403,32 @@ p.text-testimonial {
     height: 18px;
 }
 
-/* */
+/* callme */
 
+.callMe{
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
+}
+
+.callMe > div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 150px;
+}
+
+.callMe > div > form{
+    display: flex;
+    flex-direction: column;
+}
+
+.callMe > div > form > *{
+    padding: 20px;
+}
+
+.callMe > div > form > *{
+    border: 1px solid #808080;
+}
 
 
 
