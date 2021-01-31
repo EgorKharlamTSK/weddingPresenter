@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&display=swap" rel="stylesheet">
-	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> -->
 	<link href="css/fotorama.css" rel="stylesheet">
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
@@ -41,13 +40,13 @@
         <div>
 			<nav>
 				<ul>
-					<li><a href=#>Обо мне</a></li>
-					<li><a href=#>Галерея</a></li>
+					<li><a href="#about">Обо мне</a></li>
+					<li><a href="#gallery">Галерея</a></li>
 
 					<div class="logo"></div>
-
-					<li><a href=#>Отзывы</a></li>
-					<li><a href=#>Цены</a></li>
+					
+					<li><a href="#price">Цены</a></li>
+					<li><a href="#test">Отзывы</a></li>
 				</ul>
 		    </nav>
         </div>
@@ -55,7 +54,7 @@
 
     <section>
         <div class="aboutMe">
-	        <div>
+	        <div id="about">
 	        	<h1>Обо мне</h1>
 	        	<div>
 	        	<div class="aboutText">
@@ -80,7 +79,7 @@
 
     <section>
 	    <div class="galleryBg">
-	    	<div>
+	    	<div id="gallery">
 	    		<h1>Галлерея изображений</h1>
 		        <div class="fotorama">
 				  <img src="img/gallery/gallery1.jpg">
@@ -100,7 +99,7 @@
 
 	<section>
 		<div class="prices">
-			<div>
+			<div id="price">
 				<h1>Сколько будет стоить мероприятие?</h1>
 				<div class="quiz">
 					<div class="changeFormat">
@@ -135,7 +134,7 @@
 
 	<section>
         <div class="testim">
-			<div>
+			<div id="test">
 				<h1>Отзывы о моей работе</h1>
 				<div id="testimonials">
 					<div class="container">
@@ -181,7 +180,7 @@
 					<input type="text" name="fio" placeholder="Укажите ФИО" required>
 					<input type="text" name="phone" placeholder="Напишите номер телефона" required>
 					<input type="text" name="email" placeholder="Укажите e-mail" required>
-					<textarea>Напишите здесь Ваше сообщение</textarea>
+					<textarea name="message">Напишите здесь Ваше сообщение</textarea>
 					<input type="submit" value="Отправить">
 				</form>
     		</div>
@@ -190,14 +189,40 @@
     <footer>
         <div class="footerBg">
             <div>
-                this is footer
+            	<div class="map">
+            		<h4>Навигация</h4>
+            		<ul>
+						<li><a href=#>Обо мне</a></li>
+						<li><a href=#>Галерея</a></li>
+						<li><a href=#>Отзывы</a></li>
+						<li><a href=#>Цены</a></li>
+					</ul>
+            	</div>
+                <div class="social">
+                	<h4>Мои социальные сети</h4>
+                	<a href="vk.com/jorgeegor"><img src="img/vk.png"></a>
+                	<a href="instagram.com/egorkharlamov/"><img src="img/inst.png"></a>
+                	<a href="facebook.com/egor.kharlamov.9/"><img src="img/fb.png"></a>
+                	<a href="wa.me/79609742736"><img src="img/wa.png"></a>
+                	<a href="t.me/EgorKharlamovEv"><img src="img/tg.png"></a>
+                </div>	
+                <div class="contactMe">
+                	<h4>Свяжитесь со мной</h4>
+                	<p><a href="mailto:egorkharlamov070793@gmail.com"><img src="img/email.png">egorkharlamov070793@gmail.com</a></p>
+                	<p><a href="tel:+79609742736"><img src="img/phone.png">8-960-974-2736</a></p>
+                </div>
+                <div class="creator">
+            		<h4>Copyright</h4>
+            		<p>© Egor Kharlamov, 2021</p>
+            	</div>
             </div>
         </div>
     </footer>
 
 </div>
 
-<script defer src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mail.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 <script src="libs/owl-carousel/owl.carousel.min.js"></script>
 <script src="js/custom.js"></script>

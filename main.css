@@ -38,6 +38,11 @@ h2{
     font-size: 2rem;
 }
 
+h4{
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
 body > * > div > div{
     width: var(--w__desk-s);
 }
@@ -414,12 +419,13 @@ p.text-testimonial {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin-bottom: 150px;
+
 }
 
 .callMe > div > form{
     display: flex;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .callMe > div > form > *{
@@ -431,14 +437,78 @@ p.text-testimonial {
 }
 
 
-
-
-
 /* footer */
 
 .footerBg{
  background: #FCDFCA;
 }
+
+.footerBg > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.map > ul{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.map > ul > li {
+    list-style: none;
+}
+
+.map > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+
+.map > ul > li > a:hover{
+    color: #ffea44;
+    transition:all 200ms ease;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -100px;   
+}
+
+.social:nth-child(2){
+    display: inline-block;
+}
+
+
+.social > h4{
+    margin-left: 10px;
+}
+
+.social > a > img{
+    width: 50px;
+}
+
+.contactMe > p > a{
+    color: black;
+    text-decoration: none;
+}
+
+.contactMe > p{
+    display: flex;
+    flex-direction: row; 
+}
+
+.contactMe > p > a > img{
+    width: 15px;
+    margin-right: 5px;
+}
+
 
 
 @media (max-width: 575px) {
