@@ -55,7 +55,7 @@
     <section>
         <div class="aboutMe">
 	        <div>
-	        	<h1>Обо мне</h1>
+	        	<h2>Обо мне</h2>
 	        	<div>
 	        	<div class="aboutText">
 	        		<p>Опыт работы на мероприятиях различного уровня: свадьбы, официальные мероприятия, корпоративные праздники.
@@ -79,7 +79,7 @@
     <section>
 	    <div class="galleryBg">
 	    	<div>
-	    		<h1>Галлерея изображений</h1>
+	    		<h2>Галлерея изображений</h2>
 		        <div class="fotorama">
 				  <img src="img/gallery/gallery1.jpg">
 				  <img src="img/gallery/gallery2.jpg">
@@ -99,22 +99,22 @@
 	<section>
 		<div class="prices">
 			<div>
-				<h1>Сколько будет стоить мероприятие?</h1>
+				<h2>Сколько будет стоить мероприятие?</h2>
 				<div class="quiz">
 					<div class="changeFormat">
-						<h2>Выберите формат события</h2>
+						<h3>Выберите формат события</h3>
 						<select id="format" title="выберите" onchange="price()">
 							<option type="radio" value="3000">Свадьба</option>
 							<option type="radio" value="3500">Корпоратив</option>
 						</select>
 					</div>
 					<div id="timecontainer">
-						<h2>Время проведения мероприятия, часов</h2>
+						<h3>Время проведения мероприятия, часов</h3>
 						<input id="time" oninput="price()" type="range" min="1" max="5" step="1" value="1">
 						<div id="timevalue"></div>
 					</div>
 					<div id="djcontainer">
-						<h2>Время работы DJ(дополнительно), часов</h2>
+						<h3>Время работы DJ(дополнительно), часов</h3>
 						<input id="dj" oninput ="price()" type="range" min="6" max="7" step="1" value="6">
 						<div id="djvalue"></div>
 					</div>
@@ -123,7 +123,7 @@
 						<input id="light" onchange="price()" type="checkbox" value="3000">Световое оборудование
 					</div>
 					<div class="resultPrice">
-						<h2>Мероприятие Вам обойдется всего в </h2>
+						<h3>Мероприятие Вам обойдется всего в </h3>
 						<div id="sum"></div>
 					</div>
 				</div>
@@ -134,7 +134,7 @@
 	<section>
         <div class="testim">
 			<div>
-				<h1>Отзывы о моей работе</h1>
+				<h2>Отзывы о моей работе</h2>
 				<div id="testimonials">
 					<div class="container">
 						<div class="block-one-example">
@@ -161,7 +161,7 @@
 										<img src="img/testemonials/client3.jpg" alt="Клиент 3">
 										<h3 class="city-name">Яна, 10.10.2019</h3>
 										<p class="text-testimonial">
-										"Егора посоветовали знакомые, среди нескольких кандидатов выбрали его. Сроки подготовки были очень маленькие, но все было просто замечательно. Были учтены все пожелания, все мелочи, и свадьба вышла просто шикарной, все родственники были просто в восторге, даже самые "опытные" гости, не остались равнодушны. Очень семейный и в то же время безумно весёлый праздник. Классная команда, диджей веселый учтет любые пожелания, отличные треки, танцы конкурсы, просто разрыв всех свадебных шаблонов. Можно смело заявить, что Егор, это тот человек, который сделает вашу свадьбу такой, которая будет только у вас, самой особенной! Профессионал, с кторорым вы ощутите настоящий праздник!"</p>
+										"Егора посоветовали знакомые. Сроки подготовки были очень маленькие, но все было просто замечательно. Были учтены все пожелания, все мелочи, и свадьба вышла просто шикарной, все родственники были просто в восторге, даже самые "опытные" гости, не остались равнодушны. Очень семейный и в то же время безумно весёлый праздник. Классная команда, диджей веселый учтет любые пожелания, отличные треки, танцы конкурсы, просто разрыв всех свадебных шаблонов. Можно смело заявить, что Егор, это тот человек, который сделает вашу свадьбу такой, которая будет только у вас, самой особенной! Профессионал, с кторорым вы ощутите настоящий праздник!"</p>
 									</div>
 								</div>
 							</div>
@@ -174,19 +174,68 @@
     <section>
     	<div class="callMe">
     		<div>
-    			
+    			<h2>Свяжитесь со мной</h2>
+    			<div class="social">
+    				<div class="vk">
+    					<a><img src="img/vk.png"></a>
+    					<p>Вконтакте<p>
+    				</div>
+    				<div class="inst">
+    					<a><img src="img/inst.png"></a>
+    					<p>Instagram<p>
+    				</div>
+    				<div class="tg">
+    					<a><img src="img/tg.png"></a>
+    					<p>Telegram<p>
+    				</div>
+    				<div class="wa">
+    					<a><img src="img/wa.png"></a>
+    					<p>WhatsApp<p>
+    				</div>
+    				<div class="fb">
+    					<a><img src="img/fb.png"></a>
+    					<p>Facebook<p>
+    				</div>
+    			</div>
+    			<div class="callback">
+    				<form action="mail.php" method="post">
+    					<fieldset>
+    						<legend>Напишите мне на email</legend>
+    						Ваше имя
+    						<input type="text" name="name">
+    						Ваша фамилия
+    						<input type="text" name="secondName">
+    						Ваш номер телефона
+    						<input type="text" name="phone">
+							Ваша электронная почта
+							<input type="text" name="email">
+    						Сообщение
+    						<textarea rows="10" cols="45" name="message"></textarea>
+    						<!-- <button type="submint">Отправить сообщение</button> -->
+    						<input type="submint" value="Отправить">
+    					</fieldset>
+    				</form>
+    			</div>
     		</div>
     	</div>
     </section>
     <footer>
         <div class="footerBg">
             <div>
-                this is footer
+				<div>
+					<ul>
+						<li><a href=#>Обо мне</a></li>
+						<li><a href=#>Галерея</a></li>
+						<li><a href=#>Отзывы</a></li>
+						<li><a href=#>Цены</a></li>
+					</ul>
+				</div>
+				<p>
+					© 2017—2021. Копирование материалов сайта запрещено
+				</p>
             </div>
         </div>
     </footer>
-
-</div>
 
 <script defer src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
