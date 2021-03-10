@@ -70,7 +70,7 @@ nav > ul > li > a{
 }
 
 nav > ul > li > a:hover{
-    color: #ffea44;
+    color: #fff;
     transition:all 200ms ease;
 
 }
@@ -465,12 +465,41 @@ p.text-testimonial {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top:200px;
+    align-items: center
 }
 
-.footerBg > div > div{
+.footerBg > div ul{
+    list-style: none;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
+
+.footerBg > div ul > li:nth-child(4){
+    margin-right: 0px;
+}
+
+.footerBg > div ul > li{
+    margin-right: 30px;
+}
+
+.footerBg > div ul > li a{
+    text-decoration: none;
+    color: black;
+    font-size:x-large;
+}
+
+.footerBg > div ul > li a:hover{
+    color: #fff;
+    transition:all 200ms ease;
+}
+
+.footerBg > div > img{
+    margin: 20px auto;
+}
+
+
 
 
 @media (max-width: 575px) {
