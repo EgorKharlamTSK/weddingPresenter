@@ -96,7 +96,7 @@ nav > ul > div:hover {
 /* About */
 
 .aboutMe{
-    height: 100%;
+    padding-bottom: 50px;
     background-color: #fff;
     background-image: url("https://www.transparenttextures.com/patterns/back-pattern.png");
 }
@@ -615,15 +615,66 @@ p.text-testimonial {
 
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 800px) {
     body > * > div > div {
         width: var(--w__tabl);
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    nav > ul > div{
+        display: none;
+    }
+
+    header > div > img{
+        display: block;
+        width: 70%;
+        margin: inherit;
+        margin-bottom: 20px;
+    }
+
+    nav > ul > li{
+        margin-right: 0px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+    }
+
+    nav > ul > img{
+        width: 20%;
+    }
+
+    .aboutMe > div{
+        margin-bottom: 20px;
+    }
+
+    .aboutMe > div > div{
+        flex-direction: column-reverse;
+    }
+
+    .aboutText{
+        width: inherit;
+        margin-right: 0px;
+        padding: 10px;
+    }
+
+
+    .aboutPhoto{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .aboutPhoto > img{
+        width: 60%;
     }
 }
 
 
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 801) and (max-width: 1280px) {
     body > * > div > div {
         width: var(--w__desk-m);
     }
