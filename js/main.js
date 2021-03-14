@@ -44,4 +44,5 @@ function price(){
     document.getElementById("sum").innerHTML = Math.round(result) + " рублей";
 }
 
-price()
+price();
+
