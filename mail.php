@@ -1,15 +1,14 @@
-<?php
-    $name = $_POST['name'];
-    $secondName = $_POST['secondName'];
-    $phone = $_POST['phone'];
-    $message = $_POST['message'];
-    $email = $_POST['email'];
+<?php 
+    $recepient = "egorkharlamov070793@gmail.com";
+    $sitename = "Ведущий Егор Харламов";
+    
+    $name = trim($_POST['name']);
+    $secondName = trim($_POST['secondName']);
+    $phone = trim($_POST['phone']);
+    $message = trim($_POST['message']);
+    $email = trim($_POST['email']);
 
 
-    if (mail("test@test", "Форма с сайта-визитки", "Имя:".$name.". E-mail: ".$email, "Фамилия:".$secondName, "Телефон:".$phone, "Сообщение:".$message ,"From: example2@mail.ru \r\n"))
-        {
-            echo "сообщение успешно отправлено";
-        } else {
-            echo "при отправке сообщения возникли ошибки";
-        }
+    mail($recepient, $sitename, $name, $secondName, $phone, $message, $email );
+
 ?>
