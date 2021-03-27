@@ -44,10 +44,10 @@ body > * > div > div{
 }
 
 header{
-    height: 100vh;
     background: #f8d2b7;
     display: flex;
     align-items: center;
+    padding: 150px 0px;
 }
 
 header > div > img{
@@ -517,6 +517,10 @@ p.text-testimonial {
 
     h3{
         font-size: 1.5rem;
+    }
+
+    header{
+        padding: 50px 0px;
     }
 
     header > div > img{
